@@ -1,6 +1,12 @@
 import express from "express";
+import dotenv from "dotenv";
+dotenv.config();
 import usersRouter from "./routes/users.routes";
+import { serverConfig } from "./config/serverConfig";
+
 const server = express();
-const PORT = 3000;
-server.listen(PORT, () => console.log(`Servidor levantado en ${PORT}`));
+server.listen(serverConfig.PORT, () =>
+  console.log(`Server running http://localhost:${serverConfig.PORT}`)
+);
+
 server.use("/users", usersRouter);

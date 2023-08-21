@@ -1,12 +1,9 @@
-import { Request, Response, Router } from "express";
+import { Request, Response, Router, json } from "express";
+import { usersController } from "../controllers/usuarios/usersController";
 
 const router = Router();
-
-router.get("/", async (req: Request, res: Response) => {
-  console.log(req.body);
-  res.status(200).send({
-    usuarios: "usuarios",
-  });
-});
+router.use(json());
+router.post("/", usersController.createUser);
+router.get("/", usersController.getUsers);
 
 export default router;

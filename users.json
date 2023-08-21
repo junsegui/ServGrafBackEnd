@@ -1,0 +1,18 @@
+[
+  {
+    "ID": "f3a357e8-5c41-4b32-8a43-136184794b04",
+    "name": "marcelo",
+    "lastname": "segui",
+    "email": "marcesegui@gmail.com",
+    "address": "Capilla del señor",
+    "addressNumber": "137"
+  },
+  {
+    "ID": "12085b49-5316-46ed-b686-3f9609c15220",
+    "name": "marcelo",
+    "lastname": "segui",
+    "email": "a@gmail.com",
+    "address": "Capilla del señor",
+    "addressNumber": "137"
+  }
+]
